@@ -6,11 +6,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-oliveDark font-sans selection:bg-oliveLight selection:text-white p-3 md:p-6 lg:p-8 flex justify-center">
       
-      <div className="w-full max-w-[1400px] bg-bgOffWhite rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden pb-20 border border-gray-100/50 shadow-sm">
+      <div className="w-full max-w-[1250px] bg-bgOffWhite rounded-[1rem] md:rounded-[1rem] overflow-hidden pb-20 border border-gray-100/50 shadow-sm">
         
         <Header />
 
-        <main className="flex flex-col items-center text-center px-4 pt-12 md:pt-16 pb-12 w-full">
+        <main className="flex flex-col items-center text-center px-4 pt-12 md:pt-16 pb-4 w-full">
           
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="flex -space-x-3">
@@ -53,7 +53,9 @@ export default function App() {
 
         </main>
 
-        <PhoneMockup />
+        <div className="-mt-18 relative z-10">
+          <PhoneMockup />
+        </div>
 
       </div>
     </div>
